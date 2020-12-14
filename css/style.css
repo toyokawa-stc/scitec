@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+  --main-color: #0182be;
+  --bg-color: #b2eaff;
+  --accent-color: #ffcc00;
+}
+
+/* --------------------------
+ 全体構造
+-------------------------- */
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  color: #000;
+  background-color: #fff;
+  font-size: 14px;
+}
+a {
+  color: var(--accent-color);
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+p {
+  line-height: 1.42;
+}
+.page {
+}
+.content {
+  overflow: hidden;
+  width: 960px;
+  margin: 0 auto 20px auto;
+}
+
+
+/* --------------------------
+ ヘッダー
+-------------------------- */
+header {
+  background-color: var(--bg-color);
+  border-top: 10px solid var(--main-color);
+  margin-bottom: 20px;
+}
+header .inner {
+  overflow: hidden;
+  height: 140px;
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+header .main-nav {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+header .main-nav li {
+  float: left;
+  margin-right: 20px;
+}
+header .hamburger-nav {
+  display: none;
+}
+header .hamburger-button {
+  display: none;
+}
+
+
+/* --------------------------
+ メイン
+-------------------------- */
+main {
+  width: 640px;
+  float: left;
+}
+main article h2 {
+  background-color: var(--main-color);
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+
+/* --------------------------
+ サイド
+-------------------------- */
+aside {
+  width: 300px;
+  float: right;
+}
+aside .banner {
+  margin-bottom: 20px;
+}
+aside .news {
+  border: 5px solid var(--main-color);
+  border-radius: 5px;
+}
+aside .news h2 {
+  background-color: var(--main-color);
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+aside .news ul {
+  list-style-type: none;
+  margin: 40px 20px 40px 20px;
+}
+aside .news li {
+  margin-bottom: 16px;
+  line-height: 1.42;
+}
+
+
+/* --------------------------
+ フッター
+-------------------------- */
+footer {
+  clear: both;
+  background-color: var(--bg-color);
+  border-bottom: 10px solid var(--main-color);
+  height: 150px;
+  overflow: hidden;
+  text-align: center;
+}
+footer address {
+  margin-top: 40px;
+  font-style: normal;
+  line-height: 1.42;
+}
+footer p {
+  margin-top: 15px;
+}
+footer br {
+  display: none;/* スマホ表示用 */
+}
+
+
+/* --------------------------
+ トップページ
+-------------------------- */
+.home main figure {
+  margin-bottom: 20px;
+}
+.home main h2 {
+  font-size: 20px;
+  color: var(--main-color);
+  margin: 0 20px 20px 20px;
+}
+.home main p {
+  margin: 0 20px 20px 20px;
+}
+
+
+/* --------------------------
+ 学科紹介
+-------------------------- */
+.course main section {
+  margin: 0 20px 40px 20px;
+  overflow: hidden;
+}
+.course main section:last-child {
+  margin-bottom: 20px;
+}
+.course main figure {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.course main h3 {
+  color: var(--main-color);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.course main p {
+  margin-left: 220px;
+}
+
+
+/* --------------------------
+ 入学案内
+-------------------------- */
+
+
+/* --------------------------
+ アクセス
+-------------------------- */
+.access main section {
+  margin: 0 20px 40px 0;
+  overflow: hidden;
+}
+.access main h3 {
+  font-size: 20px;
+  color: var(--main-color);
+  margin: 0 0 20px 0;
+}
+.access main p {
+  margin: 0 0 20px 0;
+}
+.access main .mihama figure {
+  float: left;
+  margin: 0 20px 0 20px;
+}
+.access main .american h3 {
+  text-align: center;
+}
+.access main address {
+  text-align: center;
+  font-style: normal;
+  margin: 20px 0 0 0;
+  line-height: 1.42;
+}

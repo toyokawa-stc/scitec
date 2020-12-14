@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width:480px) {
+
+/* --------------------------
+ 全体構造
+-------------------------- */
+  .content {
+    width: auto;
+  }
+
+
+/* --------------------------
+ ヘッダー
+-------------------------- */
+  header .inner {
+    width: auto;
+    height: auto;
+  }
+  header h1 {
+    position: static;
+    margin: 20px 0;
+    text-align: center;
+  }
+  header .main-nav {
+    display: none;
+  }
+  /* デザイン確認用
+  header .hamburger-nav {
+    top: 0 !important;
+  }
+  */
+  header .hamburger-button {
+    display: flex;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 2px;
+    width: 100px;
+    height: 100px;
+  }
+  header .hamburger-button svg {
+    width: 60px;
+    height: 60px;
+  }
+  header .hamburger-button path {
+    color: #f00;
+  }
+  header .hamburger-nav {
+    height: 60vh;
+    background-color: rgba(0, 0, 0, .6);
+  }
+  header .hamburger-nav a {
+    display: block;
+    padding: 10px 0;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  /* スマホのメニューが不要となったため
+  header .main-nav {
+    position: static;
+  }
+  header .main-nav ul {
+    overflow: hidden;
+    background-color: var(--main-color);
+  }
+  header .main-nav li {
+    width: 25%;
+    margin: 0;
+  }
+  header .main-nav li img {
+    width: 100%;
+    height: auto;
+  }
+  */
+
+
+/* --------------------------
+ メイン
+-------------------------- */
+  main {
+    float: none;
+    width: auto;
+    margin-bottom: 60px;
+  }
+  main article {
+    margin: 0 20px;
+  }
+
+
+/* --------------------------
+ サイド
+-------------------------- */
+  aside {
+    float: none;
+    width: auto;
+    padding: 0 20px;
+  }
+  aside .banner {
+    text-align: center;
+  }
+  aside .banner img {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+
+/* --------------------------
+ フッター
+-------------------------- */
+  footer {
+    height: auto;
+  }
+  footer address {
+    margin-top: 20px;
+  }
+  footer p {
+    margin: 15px 0 20px;
+  }
+  footer br {
+    display: inline;/* スマホ表示用 */
+  }
+
+
+/* --------------------------
+ トップページ
+-------------------------- */
+  .home main figure img {
+    width: 100%;
+    height: auto;
+  }
+
+
+/* --------------------------
+ 学科紹介
+-------------------------- */
+  .course main section {
+    margin: 0 0 60px;
+  }
+  .course main figure {
+    float: none;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .course main p {
+    margin-left: 0;
+  }
+
+
+/* --------------------------
+ 入学案内
+-------------------------- */
+  .info {
+  }
+
+
+/* --------------------------
+ アクセス
+-------------------------- */
+  .access {
+  }
+
+}
